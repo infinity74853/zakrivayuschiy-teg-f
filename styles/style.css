@@ -21,7 +21,7 @@
   background-attachment: fixed;
   display: grid;
   justify-content: center;
-  font-variation-settings: 'wght' var(--card-font-weight);
+  font-variation-settings: "wght" var(--card-font-weight);
   font-weight: var(--card-font-weight);
   font-size: 18px;
   padding-block: 100px;
@@ -105,7 +105,7 @@
   object-fit: cover;
   object-position: center;
 }
- 
+
 .card__content {
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@
   display: flex;
   justify-content: center;
   height: 38px;
-  border:none;
+  border: none;
   background-color: transparent;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: 2px solid var(--border-color); 
+  border-color: 2px solid var(--border-color);
 }
 
 .button {
@@ -168,7 +168,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-color: var(--text-page-color);  
+  background-color: var(--text-page-color);
   inline-size: 100%;
   block-size: 100%;
   transform-origin: left;
@@ -267,7 +267,7 @@
     top: 57px;
     right: 11px;
   }
-  
+
   .dialog__button {
     flex-direction: column;
     gap: 9px;
@@ -279,7 +279,6 @@
     width: 28px;
     height: 28px;
   }
-
 }
 
 /* директива водяного знака */
@@ -287,6 +286,6 @@
 @supports (-webkit-text-stroke: 1px var(--bg-color)) {
   .card__watermark {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--bg-color);    
+    -webkit-text-stroke: 1px var(--bg-color);
   }
 }
