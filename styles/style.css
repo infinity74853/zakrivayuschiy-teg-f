@@ -56,8 +56,61 @@
   text-transform: uppercase;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   margin-inline: 53px;
-  margin-block-end: 128px;
   font-family: var(--accent-font-family);
+}
+
+.theme-menu {
+    
+}
+
+.header__theme-menu {
+  font-family: var(--accent-font-family);
+  margin-block-start: 5px;
+  margin-block-end: 26px;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 10px;
+  margin-block-start: 10px;
+}
+
+.theme-menu__item {
+      
+}
+
+.theme-menu__button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  outline: none;  
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.theme-menu__button:hover {
+  color: var(--text-color);
+}
+
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+.theme-menu__button:hover::after {
+  width: 100%;
+}
+
+.theme-menu__button:disabled::before {
+  width: 10px;
+  position: absolute;
+  content: '▶';
+  line-height: 14px;
+  font-size: 14px;
+  right: 100px;
 }
 
 /* main */
@@ -81,19 +134,19 @@
 }
 
 .card__title {
-  font-variation-settings: "wght" var(--accent-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   font-size: 18px;
   padding-block: 5px;
   padding-inline: 10px;
   border-block-end: 2px solid var(--border-color);
 }
 
-.card__watermark {
+.card__lable {
   position: absolute;
   z-index: 1;
   top: 60px;
   right: 25px;
-  text-shadow: 0 0 1px var(--page-bg-color, #fff);
+  text-shadow: 0 0 1px var(--bg-color);
   opacity: 0.5;
   font-size: 14px;
   font-family: var(--accent-font-family, "PressStart2P", fantasy);
@@ -146,7 +199,7 @@
 .button {
   position: relative;
   z-index: 1;
-  border: 2px solid var(--text-color, #000);
+  border: 2px solid var(--border-color);
   background-color: var(--bg-color);
   cursor: pointer;
   font-size: 14px;
@@ -175,7 +228,7 @@
 }
 
 .button__text {
-  color: var(--btn-hover-text-color);
+  color: var(--btn-text-color);
   mix-blend-mode: difference;
 }
 
@@ -191,6 +244,8 @@
 .button__floppy {
   width: 21px;
   height: 21px;
+  color: var(--btn-text-color);
+  mix-blend-mode: difference;
 }
 
 /* модальное окно*/
@@ -202,7 +257,7 @@
   gap: 10px;
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
-  padding: 15px;
+  padding: 20px;
   font-family: var(--accent-font-family);
   font-size: 14px;
   margin-block-start: 2px;
@@ -216,11 +271,12 @@
   max-inline-size: 357px;
   min-inline-size: 193px;
   padding-block: 25px;
-  color: var(--text-color);
+  color: var(--btn-text-color);
 }
 
 .dialog__content {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   gap: 15px;
 }
@@ -235,7 +291,7 @@
 .dialog__button-text {
   text-transform: uppercase;
   inline-size: 100%;
-  color: var(--btn-hover-text-color);
+  color: var(--btn-text-color);
   mix-blend-mode: difference;
 }
 
@@ -244,12 +300,13 @@
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
+  color: var(--text-color);
   white-space: pre-line;
 }
 
 .dialog__button-floppy {
-  width: 50px;
-  height: 50px;
+  width: 39px;
+  color: var(--text-color);
 }
 
 .dialog::backdrop {
@@ -259,11 +316,15 @@
 /* для мобильных устройств */
 
 @media (width <= 375px) {
-  .header__subtitle {
-    margin-block-end: 120px;
+  .header__title {
+    margin-block-start: 117px;
   }
 
-  .card__watermark {
+  .header__theme-menu {
+    margin-block-end: 16px;
+  }
+
+  .card__lable {
     top: 57px;
     right: 11px;
   }
@@ -273,6 +334,7 @@
     gap: 9px;
     padding: 14px 20px 16px 20px;
     max-block-size: 100px;
+    margin-block-start: 0;
   }
 
   .button__floppy {
@@ -283,9 +345,9 @@
 
 /* директива водяного знака */
 
-@supports (-webkit-text-stroke: 1px var(--bg-color)) {
-  .card__watermark {
+@supports (-webkit-text-stroke: 1px var(--lable-shadow)) {
+  .card__lable {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--bg-color);
+    -webkit-text-stroke: 1px var(--lable-shadow);
   }
 }

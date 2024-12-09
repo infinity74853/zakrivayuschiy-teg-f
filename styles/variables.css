@@ -9,13 +9,15 @@
     linear-gradient(
       180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --bg-color: #fff;
+  --lable-shadow: #fff;
   --text-page-color: #000;
   --border-color: #000;
-  --accent-font-weight: 700;
+  --title-font-weight: 700;
   --card-font-weight: 400;
   --accent-font-family: "PressStart2P", fantasy;
   --main-font-family: 'Inter', sans-serif;
-  --btn-hover-text-color: #fff;
-  --black-heart: #000;
+  --text-color: #000;
+  --btn-text-color: #fff;
+  --contour-heart: #000;
   --red-heart: #ff0000;
 }

@@ -10,16 +10,43 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./images/favicon.svg" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
       <article class="header__container">
         <h1 class="header__title">&lt;/HTML&gt;</h1>
         <h2 class="header__subtitle">закрывающий тег</h2>
+        <nav class="theme-menu header__theme-menu">
+          <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+          <ul class="theme-menu__list">
+            <li class="theme-menu__item">
+              <button type="button" data-theme="dark" class="theme-menu__button">
+                Темно
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button
+                type="button"
+                data-theme="auto"
+                disabled
+                class="theme-menu__button"
+              >
+                Авто
+              </button>
+            </li>
+            <li class="theme-menu__item">
+              <button type="button" data-theme="light" class="theme-menu__button">
+                Светло
+              </button>
+            </li>
+          </ul>
+        </nav>
       </article>
     </header>
     <main class="main">
@@ -28,7 +55,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
-              <span class="card__watermark"> &lt;/HTML&gt; </span>
+              <span class="card__lable"> &lt;/HTML&gt; </span>
               <img class="card__picture" src="./images/post1.png" alt="микроавтобус на фоне ночного неба в парке" />
               <div class="card__content">
                 <p>
@@ -45,7 +72,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -66,7 +93,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-              <span class="card__watermark"> &lt;/HTML&gt; </span>
+              <span class="card__lable"> &lt;/HTML&gt; </span>
               <img class="card__picture" src="./images/post2.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -84,7 +111,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -105,7 +132,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">1 спринт: А если не получится?</h2>
-              <span class="card__watermark"> &lt;CSS&gt; </span>
+              <span class="card__lable"> &lt;CSS&gt; </span>
               <img class="card__picture" src="./images/post3.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -122,7 +149,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -143,7 +170,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-              <span class="card__watermark"> &lt;desigions&gt; </span>
+              <span class="card__lable"> &lt;desigions&gt; </span>
               <img class="card__picture" src="./images/post4.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -161,7 +188,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -182,7 +209,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-              <span class="card__watermark">care</span>
+              <span class="card__lable">care</span>
               <img class="card__picture" src="./images/post5.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -200,7 +227,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -221,7 +248,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-              <span class="card__watermark"> &lt;support&gt; </span>
+              <span class="card__lable"> &lt;support&gt; </span>
               <img class="card__picture" src="./images/post6.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -238,7 +265,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -259,7 +286,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-              <span class="card__watermark"> &lt;lifes-style: none;&gt; </span>
+              <span class="card__lable"> &lt;lifes-style: none;&gt; </span>
               <img class="card__picture" src="./images/post7.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -277,7 +304,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -298,7 +325,7 @@
           <li>
             <article class="card">
               <h2 class="card__title">«Сейчас я здесь»</h2>
-              <span class="card__watermark"> &lt;experience&gt; </span>
+              <span class="card__lable"> &lt;experience&gt; </span>
               <img class="card__picture" src="./images/post8.png" alt="bus" />
               <div class="card__content">
                 <p>
@@ -316,7 +343,7 @@
                       <path
                         class="contour"
                         d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
-                        fill="var(--black-heart)"
+                        fill="var(--contour-heart)"
                       />
                       <path
                         class="main-body"
@@ -350,7 +377,8 @@
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="dialog__text">
-            Вставьте дискету, чтобы продолжить
+            Вставьте 
+            дискету, чтобы продолжить
           </span>
         </div>
         <button class="button dialog__button" type="button" onclick="window['dialog-id'].close();">

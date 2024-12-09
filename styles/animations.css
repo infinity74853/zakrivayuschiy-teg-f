@@ -15,6 +15,10 @@
 
 /* анимация кнопки */
 
+.theme-menu__button::after {
+  transition: width 0.3s; 
+}
+
 .card__icon-button {
   transition: border 0.3s ease-in-out;
 }
@@ -53,7 +57,7 @@
 }
 
 .like-icon .contour {
-  fill: var(--black-heart);
+  fill: var(--contour-heart);
   transition: fill 0.1s linear;
 }
 
@@ -63,7 +67,7 @@
 }
 
 .like-icon:hover .main-body {
-  fill: var(--black-heart);
+  fill: var(--contour-heart);
   transition: fill 0.3s linear;
 }
 
@@ -74,17 +78,17 @@
 
 .like-icon .core {
   fill: var(--bg-color);
-  transition: fill 0.3s linear 0.3s;
+  transition: fill 0.6s linear 0.6s;
 }
 
 .like-icon:hover .core {
-  fill: var(--black-heart);
-  transition: fill 0.3s linear 0.3s;
+  fill: var(--contour-heart);
+  transition: fill 0.6s linear 0.6s;
 }
 
 .like-icon:active .core {
   fill: var(--red-heart);
-  transition: fill 0.3s linear 0.3s;
+  transition: fill 0.6s linear 0.6s;
 }
 
 @keyframes sparks {
