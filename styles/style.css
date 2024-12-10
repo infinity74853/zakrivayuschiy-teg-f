@@ -78,7 +78,7 @@
   position: relative;
   background-color: transparent;
   border: none;
-  outline: none;  
+  outline: none;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
@@ -89,7 +89,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
@@ -103,7 +103,7 @@
 .theme-menu__button:disabled::before {
   width: 10px;
   position: absolute;
-  content: '▶';
+  content: "▶";
   line-height: 14px;
   font-size: 14px;
   right: 100px;
@@ -279,7 +279,6 @@
   align-items: center;
   gap: 15px;
   line-height: 20px;
-  
 }
 
 .dialog[open] {
@@ -301,7 +300,6 @@
   font-size: 14px;
   text-transform: uppercase;
   color: var(--text-color);
-  
 }
 
 .dialog__button-floppy {
