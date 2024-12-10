@@ -14,7 +14,7 @@
       180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --bg-color: #fff;
   --lable-shadow: #fff;
-  --text-page-color: #000;
+  --accent-color: #000;
   --border-color: #000;
   --title-font-weight: 700;
   --card-font-weight: 400;
@@ -36,7 +36,7 @@
       180deg, #007f0c 0%, #004306 100%);
   --bg-color: #000;
   --lable-shadow: #fff;
-  --text-page-color: #00cc14;
+  --accent-color: #00cc14;
   --border-color: #00cc14;
   --title-font-weight: 785;
   --card-font-weight: 465;
@@ -59,7 +59,7 @@
         180deg, #007f0c 0%, #004306 100%);
     --bg-color: var(--black-color, #000);
     --lable-shadow: #fff;
-    --text-page-color: var(--green-color, #00cc14);
+    --accent-color: var(--green-color, #00cc14);
     --border-color: var(--green-color, #00cc14);
     --title-font-weight: 785;
     --card-font-weight: 465;
