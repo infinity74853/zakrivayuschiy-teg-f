@@ -340,21 +340,23 @@
   }
 
   .button__floppy {
-    width: 28px;
-    height: 28px;
+    width: 21px;
+    height: 21px;
   }
 }
 
 /* директива лэйбла карточки */
 
-@supports (-webkit-text-stroke: 1px var(--lable-shadow)) {
-  .card__lable {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--lable-shadow);
-  }
+@supports (-webkit-text-stroke: .5px var(--lable-shadow))
+  or (text-stroke: .5px var(--lable-shadow)) {
+    .card__lable {
+      text-shadow: none;
+      -webkit-text-stroke: .5px var(--bg-color);
+      text-stroke: .5px var(--bg-color);
+    }
 }
 
-/* CSS-фильтры для изображений в постах */
+/* CSS-фильтры для изображений в карточках */
 
 .filter-grayscale {
   filter: grayscale(0.8);

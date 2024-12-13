@@ -23,7 +23,7 @@
 :root.theme-dark {
   --page-bg-image: repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #007f0c 0%, #004306 100%);
   --bg-color: #000;
-  --lable-shadow: #fff;
+  --lable-shadow: #00cc14;
   --accent-color: #00cc14;
   --border-color: #00cc14;
   --title-font-weight: 785;
@@ -40,7 +40,7 @@
   :root {
     --page-bg-image: repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #007f0c 0%, #004306 100%);
     --bg-color: var(--black-color, #000);
-    --lable-shadow: #fff;
+    --lable-shadow: #00cc14;
     --accent-color: var(--green-color, #00cc14);
     --border-color: var(--green-color, #00cc14);
     --title-font-weight: 785;
