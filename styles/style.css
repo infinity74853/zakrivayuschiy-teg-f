@@ -49,7 +49,7 @@
 .header__title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   font-family: var(--accent-font-family);
-  margin-block-start: 136px;
+  margin-block-start: 128px;
 }
 
 .header__subtitle {
@@ -61,7 +61,7 @@
 
 .header__theme-menu {
   font-family: var(--accent-font-family);
-  margin-block-start: 2px;
+  margin-block-start: 10px;
   margin-block-end: 20px;
 }
 
@@ -118,12 +118,12 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
   max-inline-size: 700px;
   margin-block-end: 50px;
-  position: relative;
   border: 2px solid var(--border-color);
 }
 
@@ -139,10 +139,16 @@
   border-block-end: 2px solid var(--border-color);
 }
 
+.card__content-image {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
 .card__lable {
   position: absolute;
   z-index: 1;
-  top: 60px;
+  top: 30px;
   right: 25px;
   text-shadow: 0 0 1px var(--bg-color);
   opacity: 0.5;
@@ -152,12 +158,13 @@
 }
 
 .card__picture {
+  display: block;
   inline-size: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center;  
 }
 
-.card__content {
+.card__content-text {
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -323,11 +330,11 @@
   }
 
   .header__theme-menu {
-    margin-block-end: 16px;
+    margin-block-end: 8px;
   }
 
   .card__lable {
-    top: 57px;
+    top: 22px;
     right: 11px;
   }
 
@@ -340,8 +347,8 @@
   }
 
   .button__floppy {
-    width: 21px;
-    height: 21px;
+    width: 28px;
+    height: 28px;
   }
 }
 
