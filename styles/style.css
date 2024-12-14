@@ -161,7 +161,7 @@
   display: block;
   inline-size: 100%;
   object-fit: cover;
-  object-position: center;  
+  object-position: center;
 }
 
 .card__content-text {
@@ -366,29 +366,29 @@
 /* CSS-фильтры для изображений в карточках */
 
 .filter-grayscale {
-  filter: grayscale(0.8);
+  filter: grayscale(0.1) hue-rotate(350deg);
 }
 
 .filter-saturate {
-  filter: saturate(3);
+  filter: saturate(0.9);
 }
 
 .filter-hue_rotate {
-  filter: hue-rotate(30deg);
+  filter: hue-rotate(340deg);
 }
 
 .filter-invert {
-  filter: invert(0.8);
+  filter: invert(0.1);
 }
 
 .filter-sepia {
-  filter: sepia(0.9);
+  filter: sepia(0.3);
 }
 
 .filter-blur {
-  filter: blur(8px);
+  filter: blur(4px) sepia(0.3);
 }
 
 .filter-multiple {
-  filter: invert(0.8) sepia(0.9) hue-rotate(30deg);
+  filter: invert(0.1) sepia(0.2) hue-rotate(330deg);
 }
