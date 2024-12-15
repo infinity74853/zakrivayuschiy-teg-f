@@ -61,7 +61,6 @@
 
 .header__theme-menu {
   font-family: var(--accent-font-family);
-  margin-block-start: 10px;
   margin-block-end: 20px;
 }
 
@@ -336,17 +335,13 @@
     margin-block-start: 120px;
   }
 
-  .header__subtitle {
-    margin-block-end: 6px;
-  }
-
-  .header__theme-menu {
-    margin-block-end: 8px;
-  }
-
   .card__lable {
     top: 22px;
     right: 11px;
+  }
+  
+  .card__title {
+    padding-block-start: 8px;
   }
 
   .dialog__button {
