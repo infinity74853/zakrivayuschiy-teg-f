@@ -25,40 +25,11 @@
   }
 }
 
-.theme-menu__button:disabled::before {
-  animation: 0.5s ease-in-out infinite alternate move-arrow;
-}
-
-.theme-menu__button:disabled {
-  pointer-events: none;
-  opacity: 0.6;
-}
-
-.theme-menu__button::after {
-  transition: width 0.3s;
-}
-
-.theme-menu__button:hover {
-  opacity: 0.6;
-}
-
 /* анимация кнопки карточки*/
 
 .card__icon-button {
-  transition: border 0.3s ease-in-out;
-}
-
-.card__icon-button:hover {
+  transition: border 0.5s ease-in-out;
   transition: border-color 0.3s ease;
-}
-
-.button {
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.button::before {
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
 }
 
 .button:hover::before {
@@ -91,29 +62,33 @@
   transition: fill 0.3s linear;
 }
 
+.like-icon .main-body .core {
+  fill: transparent;
+}
+
 .like-icon:hover .main-body {
   fill: var(--contour-heart);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .main-body {
   fill: var(--red-heart);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon .core {
   fill: var(--bg-color);
-  transition: fill 0.6s linear 0.3s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon:hover .core {
   fill: var(--contour-heart);
-  transition: fill 0.6s linear 0.3s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon:active .core {
   fill: var(--red-heart);
-  transition: fill 0.3s linear 0.3s;
+  transition: fill 0.3s linear;
 }
 
 @keyframes sparks {
@@ -133,17 +108,17 @@
 /* состояние лайкнутой иконки сердце */
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.3s 1 alternate;
+  animation: heart 0.3s ease-in 0.1s 1 alternate;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--red-heart);
-  transition: fill 0.3s linear 0.6s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--red-heart);
-  transition: fill 0.3s linear 0.3s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .core {
@@ -152,5 +127,5 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.5s ease-in 0.3s 1 alternate;
+  animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
