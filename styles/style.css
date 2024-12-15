@@ -310,7 +310,7 @@
   text-transform: uppercase;
   inline-size: 100%;
   color: var(--btn-text-color);
-  mix-blend-mode: difference;  
+  mix-blend-mode: difference;
 }
 
 .dialog__text {

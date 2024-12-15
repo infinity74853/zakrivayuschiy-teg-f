@@ -28,8 +28,7 @@
 /* анимация кнопки карточки*/
 
 .card__icon-button {
-  transition: border 0.5s ease-in-out;
-  transition: border-color 0.3s ease;
+  transition: border 0.3s ease-in-out;
 }
 
 .button:hover::before {
