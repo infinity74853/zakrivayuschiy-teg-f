@@ -49,7 +49,7 @@
 .header__title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   font-family: var(--accent-font-family);
-  margin-block-start: 128px;
+  margin-block-start: 137px;
 }
 
 .header__subtitle {
@@ -193,7 +193,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 0;
+  padding: 4px 0;
 }
 
 .like-icon {
@@ -266,27 +266,26 @@
 
 /* модальное окно */
 
-.dialog__button {
+.save__button {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   background-color: var(--bg-color);
   border: 2px solid var(--border-color);
-  padding: 20px;
+  padding: 15px 20px 15px 15px;
   font-family: var(--accent-font-family);
   font-size: 14px;
   margin-block-start: 2px;
-  max-block-size: 55px;
 }
 
 .dialog {
   background-color: var(--bg-color);
-  border: 2px solid currentColor;
+  border: 2px solid var(--border-color);
   padding-inline: clamp(1.875rem, 3.221rem + -3.077vw, 2.5rem);
   max-inline-size: 357px;
   min-inline-size: 193px;
-  padding-block: 25px;
+  padding-block: 30px;
   color: var(--btn-text-color);
 }
 
@@ -303,6 +302,10 @@
   gap: 30px;
   max-width: clamp(21.313rem, 20.159rem + 4.923vw, 22.313rem);
   flex-direction: column;
+}
+
+.dialog__button {
+  padding: 10px;
 }
 
 .dialog__button-text {
@@ -335,15 +338,15 @@
     margin-block-start: 120px;
   }
 
+  .header__theme-menu {
+    margin-block-end: 23px;
+  }
+
   .card__lable {
     top: 22px;
     right: 11px;
   }
   
-  .card__title {
-    padding-block-start: 8px;
-  }
-
   .dialog__button {
     flex-direction: column;
     gap: 9px;
@@ -360,12 +363,12 @@
 
 /* директива лэйбла карточки */
 
-@supports (-webkit-text-stroke: .5px var(--lable-shadow))
-  or (text-stroke: .5px var(--lable-shadow)) {
+@supports (-webkit-text-stroke: 1px var(--lable-shadow))
+  or (text-stroke: 1px var(--lable-shadow)) {
     .card__lable {
       text-shadow: none;
-      -webkit-text-stroke: .5px var(--bg-color);
-      text-stroke: .5px var(--bg-color);
+      -webkit-text-stroke: 1px var(--bg-color);
+      text-stroke: 1px var(--bg-color);
     }
 }
 
